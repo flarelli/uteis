@@ -40,12 +40,12 @@ namespace AutomacaoBDD.Functions
             //Anexa os arquivos aqui
             Microsoft.Office.Interop.Outlook.Attachment oAttach = oMsg.Attachments.Add(arquivo, y, x, attach);
             //Adiciona Assunto no e-mail
-            oMsg.Subject = percentagemTestes + "% - " + qntCenarioSucesso + "/" + qntCenario + " scripts - Mesa Formalização e Originação - Relatório de Testes Automatizados " + dateTime;
+            oMsg.Subject = percentagemTestes + "% - " + qntCenarioSucesso + "/" + qntCenario + " scripts " + dateTime;
 
             //Informa o e-mail destinatário
             Microsoft.Office.Interop.Outlook.Recipients oRecips = (Microsoft.Office.Interop.Outlook.Recipients)oMsg.Recipients;
 
-            Microsoft.Office.Interop.Outlook.Recipient oRecip = (Microsoft.Office.Interop.Outlook.Recipient)oRecips.Add("flavia.guimaraes@oletecnologia.com.br"); //mesa.originacao@oletecnologia.com.br
+            Microsoft.Office.Interop.Outlook.Recipient oRecip = (Microsoft.Office.Interop.Outlook.Recipient)oRecips.Add("email"); 
             oRecip.Resolve();
 
 
