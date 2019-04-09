@@ -18,7 +18,7 @@ namespace AutomacaoBDD.Functions
         public static string primeiroArquivo;
         private static List<string> arquivos = new List<string>();
 
-        public static string TakeScreenshotProposta(string numProposta)
+        public static string TakeScreenshot(string x)
         {
             var feature = FeatureContext.Current.FeatureInfo.Title.ToString().Trim().Replace(" ", "");
             var scenario = ScenarioContext.Current.ScenarioInfo.Title.ToString().Trim().Replace(" ", "");
