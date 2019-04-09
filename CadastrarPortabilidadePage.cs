@@ -8,30 +8,30 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Threading;
 
-namespace AutomacaoBDD.Pages.SimuladorPortabilidade
+namespace AutomacaoBDD.Pages.Simulador
 {
-    public class CadastrarPortabilidadePage : PageBase
+    public class CadastrarPage : PageBase
     {
         #region Mapeamento dos elementos da tela
 
         #region Mapeamento elementos de Dados de Inicio da Simulação
 
-        [FindsBy(How = How.Id, Using = "inputConvenio")]
+        [FindsBy(How = How.Id, Using = "sdfsd")]
         private IWebElement txtCodConvenio;
 
-        [FindsBy(How = How.XPath, Using = "//*[@id='pnlConteudo']/p[1]/span[1]/a/span[1]")]
+        [FindsBy(How = How.XPath, Using = "//*[@id='sdfsdf']/p[1]/span[1]/a/span[1]")]
         private IWebElement btnConvenio;
 
-        [FindsBy(How = How.Id, Using = "txtCodProduto")]
+        [FindsBy(How = How.Id, Using = "sdfsdf")]
         private IWebElement txtCodProduto;
 
-        [FindsBy(How = How.Id, Using = "txtNome")]
+        [FindsBy(How = How.Id, Using = "sdfsdf")]
         private IWebElement txtNome;
 
-        [FindsBy(How = How.Id, Using = "txtCPF")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdf")]
         private IWebElement txtCPF;
 
-        [FindsBy(How = How.Id, Using = "txtDataNascimento")]
+        [FindsBy(How = How.Id, Using = "sdfsdf")]
         private IWebElement txtDataNascimento;
 
         [FindsBy(How = How.Id, Using = "txtBanco")]
@@ -43,286 +43,121 @@ namespace AutomacaoBDD.Pages.SimuladorPortabilidade
         [FindsBy(How = How.Id, Using = "txtQuantidadeParcelas")]
         private IWebElement txtQuantidadeParcelas;
 
-        [FindsBy(How = How.Id, Using = "txtValorParcelas")]
+        [FindsBy(How = How.Id, Using = "sdfsdf")]
         private IWebElement txtValorParcelas;
 
-        [FindsBy(How = How.Id, Using = "rbTaxa")]
+        [FindsBy(How = How.Id, Using = "sdf")]
         private IWebElement rbTaxa;
 
-        [FindsBy(How = How.Id, Using = "txtTaxaContrato")]
+        [FindsBy(How = How.Id, Using = "sdfsd")]
         private IWebElement txtTaxaContratoPortado;
 
-        [FindsBy(How = How.Id, Using = "txtQtdTotalParcelas")]
+        [FindsBy(How = How.Id, Using = "sdfsdf")]
         private IWebElement txtQtdTotalParcelas;
 
-        [FindsBy(How = How.Id, Using = "btnProsseguir")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsd")]
         private IWebElement btnProsseguirPrd;
 
-        [FindsBy(How = How.Id, Using = "btnSimular")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdf")]
         private IWebElement btnSimular;
 
-        [FindsBy(How = How.Id, Using = "ddlProduto")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsd")]
         private IWebElement cbxProduto;
 
-        [FindsBy(How = How.Id, Using = "txtTaxaProduto")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement taxaProduto;
 
-        [FindsBy(How = How.Id, Using = "rblTipoVenda")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsd")]
         private IWebElement rbTipoVenda;
 
-        [FindsBy(How = How.Id, Using = "rblTipoVenda_0")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsd")]
         private IWebElement rbTipoVendaDigital;
 
-        [FindsBy(How = How.Id, Using = "rblTipoVenda_1")]
+        [FindsBy(How = How.Id, Using = "sfdsdfsdfsdf")]
         private IWebElement rbTipoVendaPadrao;
 
-        [FindsBy(How = How.Id, Using = "btnContinuarVendaPadraoSim")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement btnSim;
 
         #endregion
 
         #region Mapeamento elementos da Simulação
 
-        [FindsBy(How = How.Id, Using = "txtResRefSaldoDevedor")]
+        [FindsBy(How = How.Id, Using = "fsdfsdfsdf")]
         private IWebElement saldodevedor;
 
-        [FindsBy(How = How.Id, Using = "txtResRefParcelasAberto")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdf")]
         private IWebElement parcelasabertos;
 
-        [FindsBy(How = How.Id, Using = "txtResRefValorParcelas")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement vlrparcelas;
 
-        [FindsBy(How = How.Id, Using = "txtResRefValorContrato")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement vlrcontrato;
 
-        [FindsBy(How = How.Id, Using = "txtResRefValorLiberado")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement vlrliberado;
 
-        [FindsBy(How = How.Id, Using = "txtResRefCustoOriginacao")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement vlrcustooriginacao;
 
-        [FindsBy(How = How.Id, Using = "txtDtlTaxaPonderada")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement vlrtaxaponderada;
 
-        [FindsBy(How = How.Id, Using = "lblMotivo")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement motivosimulacao;
 
-        [FindsBy(How = How.Id, Using = "btnSalvar")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement btnGravarSimulacao;
 
-        [FindsBy(How = How.Id, Using = "btnEditar")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement btnEditarSimulacao;
 
 
         #endregion
 
-        #region Mapeamento dos elementos de Login Portabilidade
+        #region Mapeamento dos elementos de Login
 
-        [FindsBy(How = How.Id, Using = "txtUsuario")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement txtUsuario;
 
-        [FindsBy(How = How.Id, Using = "txtSenha")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement txtSenha;
 
-        [FindsBy(How = How.Id, Using = "btnEntrar")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement btnEntrar;
 
         #endregion
 
         #region Mapeamento dos elementos de Dados Principais da Proposta
 
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosIniciais_ucAccordion1_ddlLoja")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement txtProdPort;
 
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosIniciais_ucAccordion1_ddlLoja")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement cbxLoja;
 
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosIniciais_ucAccordion1_ddlOrgao")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement cbxOrgao;
 
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosIniciais_ucAccordion1_txtCodBeneficio")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement txtCodBeneficio;
 
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosIniciais_ucAccordion1_txtVersaoFormulario")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement txtVersaoFormulario;
 
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosIniciais_ucAccordion1_txtRenda")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement txtRenda;
 
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosIniciais_ucAccordion1_btnProsseguir")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement btnProsseguir;
 
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosIniciais_ucAccordion1_btnVoltar")]
+        [FindsBy(How = How.Id, Using = "sdfsdfsdfsd")]
         private IWebElement btnVoltar;
 
         #endregion
 
-        #region Mapeamento dos elementos de Cadastro do Cliente
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtNome")]
-        private IWebElement txtnomecliente;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtDataNascimento")]
-        private IWebElement txtDataNascimentoCliente;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ddlNacionalidade")]
-        private IWebElement cbxNacionalidade;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtNaturalidade")]
-        private IWebElement txtNaturalidade;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ddlSexo")]
-        private IWebElement cbxSexo;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ddlEstadoCivil")]
-        private IWebElement cbxEstadoCivil;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtRG")]
-        private IWebElement txtRG;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ddlUfRg")]
-        private IWebElement cbxUFRG;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtOrgaoEmissor")]
-        private IWebElement txtOrgaoEmissor;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtDataEmissao")]
-        private IWebElement txtDataEmissao;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucEnderecoCliente_txtCep")]
-        private IWebElement txtCEP;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucEnderecoCliente_ddlUf")]
-        private IWebElement cbxUF;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucEnderecoCliente_txtEndereco")]
-        private IWebElement txtEndereco;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucEnderecoCliente_txtNumero")]
-        private IWebElement txtNumero;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucEnderecoCliente_txtBairro")]
-        private IWebElement txtBairro;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucEnderecoCliente_txtCidade")]
-        private IWebElement txtCidade;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucTelefoneCliente_txtDDD")]
-        private IWebElement txtDDDTel;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucTelefoneCliente_txtNumeroTelefone")]
-        private IWebElement txtNumeroTelefone;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucTelefoneCelularDadosAdicionais_txtDDD")]
-        private IWebElement txtDDDCel;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_ucTelefoneCelularDadosAdicionais_txtNumeroTelefone")]
-        private IWebElement txtNumeroCelular;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtMatricula")]
-        private IWebElement txtMatricula;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtNomePai")]
-        private IWebElement txtNomePai;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtNomeMae")]
-        private IWebElement txtNomeMae;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_txtEmail")]
-        private IWebElement txtEmail;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosCliente_vdsDadosCliente")]
-        private IWebElement msgValidacao;
-
-        #endregion
-
-        #region Mapeamento dos elementos dos Dados Bancarios do Cliente
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosBancarios_ddlTipoConta")]
-        private IWebElement cbxTipoConta;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosBancarios_txtBanco")]
-        private IWebElement txtBanco;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosBancarios_txtAgenciaCorrespondencia")]
-        private IWebElement txtAgencia;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosBancarios_txtDigitoAgenciaCorrespondencia")]
-        private IWebElement txtAgenciaDigito;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosBancarios_txtContaCorrespondencia")]
-        private IWebElement txtContaCliente;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_ucDadosBancarios_txtDigitoContaCorrespondencia")]
-        private IWebElement txtContaDigito;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucDadosCliente_btnProsseguir")]
-        private IWebElement btnprosseguir2;
-
-        #endregion
-
-        #region Mapeamento dos elementos Conta Bancária Terceiros
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_ucAccordion3_ddlTipoConta")]
-        private IWebElement cbxTipoContaTerceiro;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_ucAccordion3_txtBanco")]
-        private IWebElement txtBancoTerceiro;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_ucAccordion3_txtAgencia")]
-        private IWebElement txtAgenciaTerceiro;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_ucAccordion3_txtDvAgencia")]
-        private IWebElement txtAgenciaDigitoTerceiro;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_ucAccordion3_txtConta")]
-        private IWebElement txtContaTerceiro;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_ucAccordion3_txtDvConta")]
-        private IWebElement txtContaDigitoTerceiro;
-
-        #endregion
-
-        #region Mapeamento dos elementos Dados de Averbação
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_ucAccordion1_txtCodAverbacao")]
-        private IWebElement txtCodAverbacao;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_ucAccordion1_txtCodAutenticacao")]
-        private IWebElement txtCodAutenticacao;
-
-        #endregion
-
-        #region Mapeamento dos elementos de Geração Final da Proposta 
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucContinuacaoDigitacao_btnProsseguir")]
-        private IWebElement btnProsseguirObservacao;
-
-        [FindsBy(How = How.Id, Using = "MainContent_ucObservacaoProposta_ucBlocoObservacao_btnProsseguir")]
-        private IWebElement btnProsseguirSalvar;
-
-        [FindsBy(How = How.Id, Using = "MainContent_lblMotivo")]
-        private IWebElement numeroProposta;
-
-        [FindsBy(How = How.Id, Using = "MainContent_divCartaoCorrespondente")]
-        private IWebElement msgCartaoCorrespondente;
-
-        [FindsBy(How = How.Id, Using = "MainContent_divCartaoAtendente")]
-        private IWebElement msgCartaoAtendente;
-
-        [FindsBy(How = How.Id, Using = "MainContent_linkCartao")]
-        private IWebElement linkCartao;
-
-        [FindsBy(How = How.XPath, Using = "//*[@id='wrapper']/section/div/div[1]/div/div/h1/span")]
-        private IWebElement telaOlaCartao;
-
-        [FindsBy(How = How.Id, Using = "MainContent_btnAnexarDocumentacao")]
-        private IWebElement btnAnexarDocumentacao;
-
-        [FindsBy(How = How.Id, Using = "MainContent_vdsErroProposta")]
-        private IWebElement msgErroProposta;
-
-
+        
         #endregion
 
         #endregion
@@ -331,45 +166,12 @@ namespace AutomacaoBDD.Pages.SimuladorPortabilidade
 
         #region Ações Dados Inicio da Simulação
 
-        public static string convenioselecionado { set; get; }
-        public static string produtoselecionado { set; get; }
-        public static string cpfcliente { set; get; }
-        public static string numProposta { set; get; }
-        public static string nomePastaDocumento { set; get; }
-        public static string qntParcelasContratoPortado { set; get; }
-        public static string qntParcelasTotaisContratoPortado { set; get; }
-        public static string valorParcela { set; get; }
-        public static string tipoVendaSelecionado { set; get; }
-        public static double taxapreenchida { set; get; }
-        public static List<string> totalParcelasConvenio { set; get; }
-        public static List<string> fasePropostaNaAnexacao { set; get; }
-        public static double taxaConvenio { set; get; }
-
-        public void AbrirPaginaCadastroPortabilidade()
+       
+        public void AbrirPaginaCadastro()
         {
-            NavigateTo(ConfigurationManager.AppSettings["CadastroPortabilidade"]);
+            NavigateTo(ConfigurationManager.AppSettings["Cadastro"]);
         }
-        public void PreencherConvenio(string convenio)
-        {
-            if (IsVisible(By.Id("inputConvenio")) == true)
-            {
-                List<string> listNome = DatabaseFactory.DBRetornarDadosQuery(Scripts.retornaCodConvenio.Replace("@nomeconvenio", convenio));
-
-                if (listNome != null)
-                {
-                    for (int i = 0; listNome.Count > i; i++)
-                    {
-                        convenioselecionado = listNome[i].TrimStart('0');
-
-                        Click(btnConvenio);
-                        SendKey(txtCodConvenio, listNome[i].TrimStart('0') + OpenQA.Selenium.Keys.ArrowDown
-                                + OpenQA.Selenium.Keys.Enter);
-
-                        Click(txtCodConvenio);
-                    }
-                }
-            }
-        }
+        
         public void PreencherNome(string nome)
         {
             Click(txtNome);
@@ -398,20 +200,17 @@ namespace AutomacaoBDD.Pages.SimuladorPortabilidade
                 SendKey(txtDataNascimento, datanascimento);
             }
         }
-        public void PreencherBancoPortabilidade(string codbancoportabilidade)
+        
+        public void PreencherNum(string num)
         {
-            SendKey(txtBancoPortabilidade, codbancoportabilidade);
-        }
-        public void PreencherNumContrato(string numcontrato)
-        {
-            if (numcontrato == "Randon")
+            if (num == "Randon")
             {
                 int de = 11111;
                 int ate = 999999999;
                 int contrato = Random(de, ate);
 
-                Click(txtNumeroContrato);
-                SendKeyInt(txtNumeroContrato, contrato);
+                Click(txtNumero);
+                SendKeyInt(txtNumero, contrato);
             }
         }
         public void PreencherQntParcelas(string qntparcelas)
