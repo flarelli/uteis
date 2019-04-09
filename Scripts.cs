@@ -8,9 +8,9 @@ namespace AutomacaoBDD.Helpers
 {
     public class Scripts
     {
-        public const string retornaStatusAPITaxaPonderada = "select valprm from bsisiscon..simparametros where codprm = 'TaxaPonderada_utilizar_api'";
+        public const string retornaStatusAPITaxaPonderada = "";
 
-        public const string conveniosQuePermitemPortabilidade = "SELECT DISTINCT T.PMCODORG4 FROM BSOAUTORIZ..TPARA T JOIN BSOCDC..TORG4 O ON O.O4CODORG = T.PMCODORG4 AND O.O4ATIVA = 'A' AND T.PMCODORG4 <> '001000' WHERE T.PMTPOPER IN (';03') AND T.PMDESCRPRD LIKE '%PORTAB%' AND EXISTS (SELECT 1 FROM BSOAUTORIZ..TPARA T2 (NOLOCK) WHERE T2.PMCODORG4 = T.PMCODORG4 AND T2.PMTPOPER = '13') ORDER BY T.PMCODORG4";
+        public const string conveniosQuePermitemPortabilidade = "";
 
         public const string ligaAPITaxaPonderada = "update bsisiscon..simparametros set valprm = '1' where codprm = 'TaxaPonderada_utilizar_api'";
 
