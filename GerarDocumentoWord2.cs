@@ -4,17 +4,16 @@ using System.Collections.Generic;
 using System;
 using System.IO;
 using OpenQA.Selenium.Remote;
-using AutomacaoBDD.Pages.SimuladorPortabilidade;
 using AutomacaoBDD.Helpers;
 
 namespace AutomacaoBDD.Functions.GeradorDocumentoWord
 {
-    public class GerarDocumentoWordPropostaPortabilidade
+    public class GerarDocumentoWord
     {
         public static string nomeArquivo;
 
 
-        public static void CriaDocumentoEvidenciaProposta(string localImagem, string nomeDoc)
+        public static void CriaDocumento(string localImagem, string nomeDoc)
         {
             var feature = FeatureContext.Current.FeatureInfo.Title.ToString().Trim().Replace(" ", "");
             var scenario = ScenarioContext.Current.ScenarioInfo.Title.ToString().Trim().Replace(" ", "");
@@ -72,7 +71,7 @@ namespace AutomacaoBDD.Functions.GeradorDocumentoWord
                     //cria um novo documento
                     using (var document = DocX.Create(nomeDoc + ".docx"))
                     {
-                        document.InsertParagraph("Proposta: " + nomeDoc
+                        document.InsertParagraph("Teste: " + nomeDoc
                             )
                             .FontSize(15d)
                             .Bold()
