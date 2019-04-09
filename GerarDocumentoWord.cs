@@ -16,7 +16,7 @@ namespace AutomacaoBDD.Functions
     public class GerarDocumentoWord
     {
 
-        public static void CreateWordprocessingDocument(string filepath, string proposta, string nomDoc)
+        public static void CreateWordprocessingDocument(string filepath, string valor, string nomDoc)
         {
             // Create a document by supplying the filepath. 
             using (WordprocessingDocument wordDocument =
